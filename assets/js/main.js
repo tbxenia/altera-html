@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		slidesPerView: 'auto',
 		slidesPerGroup: 1,
 		loop: true,
-		autoplay: {
-			delay: 2000,
-		},
+		autoplay: false,
 	});
 	
 	const usabilitySlider = new Swiper(".slider__usability", {
@@ -40,4 +38,27 @@ document.addEventListener("DOMContentLoaded", () => {
 	Fancybox.bind("[data-fancybox]", {
 		
 	});
+	
+	function setEqualHeight(classBlock) {
+		const blocks = document.querySelectorAll(classBlock);
+		let maxHeight = 0;
+
+		blocks.forEach(block => {
+			block.style.height = 'auto';
+		});
+
+		blocks.forEach(block => {
+			const height = block.offsetHeight;
+			if (height > maxHeight) {
+				maxHeight = height;
+			}
+		});
+
+		blocks.forEach(block => {
+			block.style.height = maxHeight + 'px';
+		});
+	}
 });
+
+window.addEventListener('load', setEqualHeight('.reviews-block__title'));
+window.addEventListener('resize', setEqualHeight('.reviews-block__title'));
