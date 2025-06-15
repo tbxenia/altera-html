@@ -249,6 +249,23 @@ svg * {
 	line-height: 60px;
 }
 
+.section__title.center {
+	text-align: center;
+}
+
+.section__extra {
+	gap: 15px;
+	display: flex;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	margin-bottom: 50px;
+}
+
+.section__extra>* {
+	width: 33.3%;
+}
+
 @media(max-width: 480px) {
 	.section__title {
 		font-weight: 200;
@@ -431,6 +448,16 @@ a {
 	overflow: hidden
 }
 
+.bg-violet {
+	background-image: url('../images/bg_tariffs.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.advantages-block.bg-violet>div {
+	color: var(--color-white);
+}
+
 .bg-gradient:before {
 	content: url('data:image/svg+xml,<svg width="401" height="400" viewBox="0 0 401 400" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_f_602_1586)"><ellipse cx="95.3897" cy="116.275" rx="236.526" ry="167.915" transform="rotate(-45 95.3897 116.275)" fill="url(%23paint0_linear_602_1586)"/></g><defs><filter id="filter0_f_602_1586" x="-209.737" y="-188.852" width="610.253" height="610.253" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_602_1586"/></filter><linearGradient id="paint0_linear_602_1586" x1="95.3897" y1="-51.6407" x2="95.3897" y2="284.19" gradientUnits="userSpaceOnUse"><stop stop-color="%23DE0085"/><stop offset="1" stop-color="%23F43150"/></linearGradient></defs></svg>');
 	top: 0;
@@ -447,7 +474,9 @@ a {
 	z-index: 0
 }
 
-.bg-gradient>div {
+.bg-gradient>div,
+.bg-gradient-half>div,
+.bg-gradient-top>div {
 	z-index: 2;
 	position: relative;
 }
@@ -463,6 +492,19 @@ a {
 	top: 0;
 	right: 0;
 	content: url('data:image/svg+xml,<svg width="238" height="400" viewBox="0 0 238 400" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_f_476_3789)"><ellipse cx="270.891" cy="157.587" rx="196.5" ry="139.5" transform="rotate(-45 270.891 157.587)" fill="url(%23paint0_linear_476_3789)"/></g><defs><filter id="filter0_f_476_3789" x="0.476562" y="-112.826" width="540.828" height="540.828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_476_3789"/></filter><linearGradient id="paint0_linear_476_3789" x1="270.891" y1="18.0874" x2="270.891" y2="297.087" gradientUnits="userSpaceOnUse"><stop stop-color="%23DE0085"/><stop offset="1" stop-color="%23F43150"/></linearGradient></defs></svg>')
+}
+
+.advantages-block.bg-gradient-top {
+	position: relative;
+	overflow: hidden;
+	z-index: 0
+}
+
+.advantages-block.bg-gradient-top:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: url('data:image/svg+xml,<svg width="216" height="187" viewBox="0 0 216 187" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_f_671_439)"><ellipse cx="270.749" cy="-83.4252" rx="196.5" ry="139.5" transform="rotate(-45 270.749 -83.4252)" fill="url(%23paint0_linear_671_439)"/></g><defs><filter id="filter0_f_671_439" x="0.334473" y="-353.839" width="540.828" height="540.828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_671_439"/></filter><linearGradient id="paint0_linear_671_439" x1="270.749" y1="-222.925" x2="270.749" y2="56.0748" gradientUnits="userSpaceOnUse"><stop stop-color="%23DE0085"/><stop offset="1" stop-color="%23F43150"/></linearGradient></defs></svg>');
 }
 
 .advantages-block__description {
@@ -685,12 +727,14 @@ a {
 	margin-top: auto;
 }
 
+.advantages-block ul,
 .usability__block-text ul {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
 }
 
+.advantages-block ul li,
 .usability__block-text ul li {
 	padding: 6px 10px;
 	border-radius: 16px;
@@ -701,6 +745,7 @@ a {
 	color: var(--color-black);
 }
 
+.advantages-block .number,
 .usability__block-text .number {
 	font-weight: 100;
 	font-size: 110px;
@@ -709,6 +754,7 @@ a {
 	text-transform: uppercase;
 }
 
+.advantages-block .text,
 .usability__block-text .text {
 	font-size: 18px;
 	line-height: 22px;
@@ -742,12 +788,14 @@ a {
 		gap: 15px;
 	}
 	
+	.advantages-block .number,
 	.usability__block-text .number {
 		font-weight: 100;
 		font-size: 100px;
 		line-height: 100px;
 	}
 	
+	.advantages-block ul li,
 	.usability__block-text ul li {
 		font-size: 16px;
 		line-height: 20px;
@@ -756,4 +804,97 @@ a {
 	.usability .advantages-block {
         width: 100%;
     }
+}
+
+/* recommend */
+
+.recommend .advantages-block__description {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.recommend .advantages-block__extra-title {
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.02em;
+}
+
+/* tariffs */
+
+.tariffs .advantages-block {
+	width: calc(1/3*100% - (1 - 1/3)*30px);
+	background-color: var(--second-blue);
+}
+
+/* services */
+
+.services__list {
+	gap: 4px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1145px;
+	margin: 0 auto;
+}
+
+.services__block {
+	border-radius: var(--border-radius-m);
+	background-color: var(--gray-silver);
+	padding: 40px 30px;
+	display: flex;
+	gap: 15px;
+}
+
+.services__info {
+	display: flex;
+	flex-direction: column;
+	min-width: 303px;
+	width: 303px;
+}
+
+.services__info-title {
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.services__info-number {
+	font-weight: 100;
+	font-size: 110px;
+	line-height: 80px;
+	color: var(--grey-dark);
+}
+
+.services__info-price {
+	margin-top: auto;
+	width: fit-content;
+	padding: 12px 20px;
+	color: var(--accent-red);
+	border-radius: 16px;
+	background-color: var(--color-white);
+}
+
+.services__description {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.services__description p {
+	margin-bottom: 10px;
+}
+
+.services__description ul li {
+	position: relative;
+	padding-left: 25px;
+}
+
+.services__description ul li:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 6px;
+	height: 6px;
+	background-color: var(--color-black);
+	content: '';
+	border-radius: 50%;
 }
