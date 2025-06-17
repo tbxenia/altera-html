@@ -341,11 +341,6 @@ a {
 @media (any-hover: hover) {
 	a:hover {
 		color: var(--accent-red);
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-underline-offset: 3px;
-		text-decoration-thickness: 2px;
-		text-decoration-skip-ink: auto;
 	}
 }
 
@@ -582,6 +577,14 @@ a {
 .advantages-block__title.big {
 	font-size: 110px;
 	line-height: 80px;
+}
+
+.advantages-block__title.big a:hover {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+	text-decoration-skip-ink: auto;
 }
 
 .advantages-block__title.medium {

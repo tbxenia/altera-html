@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			block.style.height = maxHeight + 'px';
 		});
 	}
+	
+	window.addEventListener('load', setEqualHeight('.reviews-block__title'));
+	window.addEventListener('resize', setEqualHeight('.reviews-block__title'));
 });
-
-window.addEventListener('load', setEqualHeight('.reviews-block__title'));
-window.addEventListener('resize', setEqualHeight('.reviews-block__title'));
