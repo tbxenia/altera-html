@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+	
+	const pathTo = "./assets/js/";
+	
 	const advantagesSlider = new Swiper(".slider__advantages", {
 		slidesPerView: 'auto',
 		slidesPerGroup: 1,
@@ -40,10 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		slidesPerGroup: 1,
 		loop: true,
 		speed: 1200,
-		autoplay: {
-			delay: 1000,
-			disableOnInteraction: false,
-		},
+		autoplay: false,
 		spaceBetween: 15,
 		breakpoints: {
 		   0: {
@@ -127,13 +127,18 @@ document.addEventListener("DOMContentLoaded", () => {
 		  const absoluteY = window.pageYOffset + rect.top;
 		  
 		  removeMenu();
-
-		  // Прокрутка с учетом отступа в 100px
+		  
 		  window.scrollTo({
 			top: absoluteY - 67,
 			behavior: 'smooth'
 		  });
 		}
 	  });
+	});
+
+	const phoneInputs = document.querySelectorAll('input[autocomplete="tel"]');
+
+	phoneInputs.forEach((input) => {
+		Inputmask({ mask: "+7 (999) 999-9999", clearIncomplete: true }).mask(input);
 	});
 });
