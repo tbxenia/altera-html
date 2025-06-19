@@ -12,7 +12,52 @@
 		<link rel="stylesheet" href="./assets/css/main.css">
 	</head>
 	<body>
+		<header class="header container">
+			<div class="header__inner">
+				<div class="header__nav">
+					<a href="/" class="header__nav-logo"><img src="./assets/images/logo-header.svg" alt="Altera Logo" width="47" height="46"></a>
+					<nav>
+						<ul>
+							<li><a href="#services">Услуги</a></li>
+							<li><a href="#cases">Кейсы</a></li>
+							<li><a href="#reviews">Отзывы</a></li>
+							<li><a href="#tariffs">Тарифы</a></li>
+							<li><a href="#work">Как работаем</a></li>
+							<li><a href="#team">Команда</a></li>
+							<li><a href="#">Статьи</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__socials socials">
+					<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
+					<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
+					<a href="#" class="btn">Обсудить проект</a>
+				</div>
+				<div class="header_burger" id="burger">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+					<label class="burger" for="burger-checkbox"></label>
+				</div>
+			</div>
+		</header>
 		<main class="content">
+			<section class="section container breadcrumbs">
+				<div class="breadcrumbs__item">
+					<a title="Перейти к Компания «Фут Контейнер»." href="/" class="home" data-fragment="breacrumb-home">
+					<span property="name">Главная</span>
+					</a>
+					<meta property="position" content="1">
+				</div>
+				<div class="breadcrumbs__item">
+					<a title="Услуги" href="#" class="">
+						<span property="name">Услуги</span>
+					</a>
+					<meta property="position" content="2">
+				</div>
+				<div class="breadcrumbs__item active">
+					<span property="name">SEO-продвижение </span>
+					<meta property="position" content="3">
+				</div>
+			</section>
 			<section class="section container">
 				<div class="section__body">
 					<h1>SEO для качественных<br>изменений в бизнесе</h1>
@@ -127,7 +172,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section container">
+			<section class="section container" id="cases">
 				<div class="section__body">
 					<div class="section__title">
 						Улучшаем юзабилити, внедряем рекомендации<br>оптимизаторов и создаем экспертный контент
@@ -215,7 +260,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="reviews">
+					<div class="reviews" id="reviews">
 						<h2 class="reviews__title">Отзывы постоянных клиентов</h2>
 						<div class="slider">
 							<div class="slider__swiper swiper slider__reviews">
@@ -352,7 +397,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section container tariffs">
+			<section class="section container tariffs" id="tariffs">
 				<div class="section__body">
 					<div class="section__title">
 						Регулярная SEO-оптимизация.<br>
@@ -411,7 +456,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section container services">
+			<section class="section container services" id="services">
 				<div class="section__body">
 					<div class="section__title center">
 						Мы также оказываем услуги
@@ -542,7 +587,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section container services services-numbers">
+			<section class="section container services services-numbers" id="work">
 				<div class="section__body">
 					<div class="section__title center">
 						Как мы строим работу
@@ -604,41 +649,95 @@
 					</div>
 				</div>
 			</section>
-			<section class="section container team">
+			<section class="section container team" id="team">
 				<div class="section__body">
+					<div class="team__info multicolor__block">
+						<div class="team__info-title">
+							Над вашими проектами работают
+						</div>
+						<ul>
+							<li>Менеджеры с опытом работы в SEO — 15 лет.</li>
+							<li>Отдел оптимизаторов со стажем работы в SEO — 5 лет.</li>
+							<li>Разработчики, которые работают с CMS 1С-Битрикс, WordPress, Joomla  и с кастомными движками.</li>
+							<li>Собственная редакция и авторы-эксперты.</li>
+						</ul>
+					</div>
+					<div class="team__cards multicolor__block swiper">
+						<div class="swiper-wrapper">
+							<div class="team__item swiper-slide ">
+								<img src="./assets/images/team-big-1.png" alt="Санин Андрей">
+								<div class="team__item-name">
+									Санин Андрей
+								</div>
+								<div class="team__item-post">
+									SEO-стратег
+								</div>
+							</div>
+							<div class="team__item swiper-slide ">
+								<img src="./assets/images/team-big-2.png" alt="Санин Андрей">
+								<div class="team__item-name">
+									Дмитрий Василевич
+								</div>
+								<div class="team__item-post">
+									Аккаунт-менеджер
+								</div>
+							</div>
+							<div class="team__item swiper-slide ">
+								<img src="./assets/images/team-big-3.png" alt="Санин Андрей">
+								<div class="team__item-name">
+									Голомолзин Денис
+								</div>
+								<div class="team__item-post">
+									SEO-эксперт
+								</div>
+							</div>
+							<div class="team__item swiper-slide ">
+								<img src="./assets/images/team-big-4.png" alt="Санин Андрей">
+								<div class="team__item-name">
+									Владимир Андреев
+								</div>
+								<div class="team__item-post">
+									Руководитель отдела SEO
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<section class="section container contacts">
+			<section class="section container contacts" id="form">
 				<div class="section__body">
-					<div class="contacts__form">
-						<div class="section__title center">
+					<div class="contacts__form multicolor__block">
+						<div class="section__title">
 							Обсудим задачу
 						</div>
 						<div class="section__extra">
 							Мы свяжемся с вами в течение двух часов, чтобы задать вопросы и обсудить, какую пользу можем принести
 						</div>
-						<div class="contacts__form">
-							<div class="form-field contacts__form-field">
+						<div class="fields">
+							<div class="form-field fields__item">
 								<input type="text" placeholder="Имя" name="username">
 							</div>
-							<div class="form-field contacts__form-field">
+							<div class="form-field cfields__item">
 								<input type="text" placeholder="Название компании" name="usercompany">
 							</div>
-							<div class="form-field contacts__form-field">
+							<div class="form-field fields__item">
 								<input type="text" placeholder="Телефон" name="userphone">
 							</div>
-							<div class="form-field contacts__form-field">
+							<div class="form-field fields__item">
 								<input type="text" placeholder="Почта" name="useremail">
 							</div>
-							<div class="form-field contacts__form-field">
+							<div class="form-field fields__item full">
 								<textarea placeholder="О задаче" name="usercomment"></textarea>
 							</div>
-							<div class="form-field">
-								<button>Оставить заявку</button>
+							<div class="form-field full form-bottom">
+								<div class="error">
+									Поле не может быть пустым
+								</div>
+								<button class="btn">Оставить заявку</button>
 							</div>
 						</div>
 					</div>
-					<div class="contacts__info">
+					<div class="contacts__info multicolor__block">
 						<img src="./assets/images/yandex_star.png" alt="Яндекс">
 						<div class="contacts__list">
 							<div class="contacts__block">
@@ -646,7 +745,7 @@
 									Адрес:
 								</div>
 								<div class="contacts__block-value">
-									Санкт-Петербург, 17-линия В.О. 4-6, БЦ «Ситилинк» офис 411-4
+									Санкт-Петербург,<br>17-линия В.О. 4-6,<br>БЦ «Ситилинк»<br>офис 411-4
 								</div>
 							</div>
 							<div class="contacts__block">
@@ -670,17 +769,26 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer container">
+		<footer class="footer section container">
 			<div class="footer__body">
 				<div class="footer__info">
-					<div class="foote__info-logo">
-						<img src="./assets/logo.png" alt="logo">
+					<div class="footer__info-logo">
+						<a href="/"><img src="./assets/images/logo.png" alt="logo"></a>
 					</div>
-					<div class="foote__info-description">
+					<div class="footer__info-description">
 						Мы занимаемся продвижением сайтов с 2004 года. Наша работа нацелена на достижение результата и увеличение Ваших доходов с сайта.
 					</div>
-					<div class="foote__info-copyright">
+					<div class="footer__info-copyright">
 						© 2004-2025 Альтера, продвижение и оптимизация сайтов
+					</div>
+					<div class="footer__info-badge">
+						<img src="./assets/images/badge-gooplace.png" alt="gooplace">
+						<img src="./assets/images/badge-yandexrating.png" alt="yandexrating">
+					</div>
+					<div class="footer__info-social socials">
+						<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
+						<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
+						<a href="#" class="socials__icon"><img src="./assets/images/social-dzen.svg" alt="dzen"></a>
 					</div>
 				</div>
 				<div class="footer__menu">
@@ -693,14 +801,16 @@
 							<li><a href="#">С оплатой за проделанные работы</a></li>
 							<li><a href="#">Создание сайтов</a></li>
 							<li><a href="#">Поддержка сайтов</a></li>
+						</ul>
+						<ul>
 							<li><a href="#">Политика конфиденциальности</a></li>
 							<li><a href="#">Соглашение на обработку персональных данных</a></li>
 						</ul>
 						<div class="footer__partners">
-							<img src="./assets/images/partners-1.png" alt="">
-							<img src="./assets/images/partners-2.png" alt="">
-							<img src="./assets/images/partners-3.png" alt="">
-							<img src="./assets/images/partners-4.png" alt="">
+							<a href="#" target="_blank"><img src="./assets/images/partners-1.png" alt=""></a>
+							<a href="#" target="_blank"><img src="./assets/images/partners-2.png" alt=""></a>
+							<a href="#" target="_blank"><img src="./assets/images/partners-3.png" alt=""></a>
+							<a href="#" target="_blank"><img src="./assets/images/partners-4.png" alt=""></a>
 						</div>
 					</div>
 					<div class="footer__column">
@@ -726,6 +836,26 @@
 				</div>
 			</div>
 		</footer>
+		
+		<div class="mobile-menu">
+			<div class="mobile-menu__inner">
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#cases">Кейсы</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#tariffs">Тарифы</a></li>
+					<li><a href="#work">Как работаем</a></li>
+					<li><a href="#team">Команда</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+			<div class="mobile-menu__social socials">
+				<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
+				<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
+				<a href="#" class="socials__icon"><img src="./assets/images/social-dzen.svg" alt="dzen"></a>
+			</div>
+		</div>
+		<div class="overlay"></div>
 		<script src="./assets/js/fancybox.umd.js"></script>
 		<script src="./assets/js/swiper-bundle.min.js"></script>
 		<script src="./assets/js/main.js"></script>
