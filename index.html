@@ -269,7 +269,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-1.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
 											<div class="reviews-block__company">Феникс-спецодежда</div>
@@ -279,7 +279,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-2.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
 											<div class="reviews-block__company">Ремарк</div>
@@ -289,7 +289,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-3.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Сайт получился функциональным. Он быстро загружается, имеет приятный дизайн»</div>
 											<div class="reviews-block__company">Лабораторное Оборудование и Приборы</div>
@@ -299,7 +299,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-1.jpg" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Проект был реализован за 7 месяцев. Сайт полностью разработан на основе нашего ТЗ»</div>
 											<div class="reviews-block__company">Рауденталл-сервис</div>
@@ -309,7 +309,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-2.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
 											<div class="reviews-block__company">Феникс-спецодежда</div>
@@ -319,7 +319,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-3.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
 											<div class="reviews-block__company">Ремарк</div>
@@ -329,7 +329,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-1.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Проект был реализован за 7 месяцев. Сайт полностью разработан на основе нашего ТЗ»</div>
 											<div class="reviews-block__company">Рауденталл-сервис</div>
@@ -339,7 +339,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-2.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
 											<div class="reviews-block__company">Феникс-спецодежда</div>
@@ -349,7 +349,7 @@
 										<div class="reviews-block">
 											<div class="reviews-block__image">
 												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
-												<a href="./assets/images/ReviewsBlock-3.jpg" data-fancybox="reviews" class="btn">Читать отзыв</a>
+												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
 											<div class="reviews-block__company">Ремарк</div>
@@ -855,10 +855,36 @@
 				<a href="#" class="socials__icon"><img src="./assets/images/social-dzen.svg" alt="dzen"></a>
 			</div>
 		</div>
+		
+		<div class="popup" id="popup-review" data-modal="reviews">
+			<div class="popup__inner">
+				<div class="popup__review">
+					<div class="popup__review-img">
+						<img src="./assets/images/review-full.png" alt="Отзыв" width="450" height="586">
+					</div>
+					<div class="popup__review-content">
+						<p>Мы очень довольны работой с командой Альтеры. Они проявили себя как профессионалы своего дела. Открытая коммуникация позволила нам легко обмениваться идеями и получать обратную связь. Они слышат наши потребности и учитывают все пожелания, не срывают договоренности.</p>
+						<p>Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах, это предотвратило неожиданные проблемы. Команда не только качественно разработала сайт, но и предложила услуги по его ЗЕО-продвижению и контекстной рекламе, что стало для нас большим плюсом.</p>
+						<p>Мы уверены, что нашли надёжного подрядчика, с которым планируем продолжать плодотворное сотрудничество в будущем. Рекомендуем всем, кто ищет ответственных и опытных специалистов!</p>
+						
+						<div class="popup__review-company">
+							Феникс-спецодежда
+						</div>
+					</div>
+				</div>
+				<div class="close">
+					<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.28033 0.21967C0.987437 -0.0732233 0.512563 -0.0732233 0.21967 0.21967C-0.0732233 0.512563 -0.0732233 0.987437 0.21967 1.28033L3.93934 5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L5 6.06066L8.71967 9.78033C9.01256 10.0732 9.48744 10.0732 9.78033 9.78033C10.0732 9.48744 10.0732 9.01256 9.78033 8.71967L6.06066 5L9.78033 1.28033C10.0732 0.987437 10.0732 0.512563 9.78033 0.21967C9.48744 -0.0732233 9.01256 -0.0732233 8.71967 0.21967L5 3.93934L1.28033 0.21967Z" fill="black"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+		
 		<div class="overlay"></div>
 		<script src="./assets/js/fancybox.umd.js"></script>
 		<script src="./assets/js/swiper-bundle.min.js"></script>
 		<script src="./assets/js/inputmask.min.js"></script>
+		<script src="./assets/js/modal.js"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		   0: {
 			   enabled: false,
 		   },
-		   480: {
+		   576: {
 			   enabled: true,
 		   }
 		}
