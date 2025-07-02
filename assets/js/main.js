@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		loop: true,
 		speed: 1200,
 		autoplay: {
-			delay: 1000,
+			delay: 5000,
 			disableOnInteraction: false,
 		},
 		spaceBetween: 15,

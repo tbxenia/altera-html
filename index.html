@@ -32,7 +32,7 @@
 				<div class="header__socials socials">
 					<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
 					<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
-					<a href="#" class="btn">Обсудить проект</a>
+					<a href="#form" class="btn">Обсудить проект</a>
 				</div>
 				<div class="header_burger" id="burger">
 					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
@@ -61,7 +61,7 @@
 			</section>
 			<section class="section container">
 				<div class="section__body">
-					<h1>SEO для качественных<br>изменений в бизнесе</h1>
+					<h1>SEO для качественных <br>изменений в бизнесе</h1>
 				</div>
 			</section>
 			<section class="section container advantages">
@@ -368,7 +368,7 @@
 						Даем только рекомендации, которые реально внедрить с учетом бюджета и ограничений на стороне клиента 
 					</div>
 					<div class="section__extra">
-						<p>Одна из основных причин, почему не получается добиться результатов в продвижении — нет возможности внедрить рекомендации SEO-специалистов.</p>
+						<p>Одна из основных причин, почему не получается добиться результатов в продвижении — нет возможности внедрить рекомендации SEO&#8209;специалистов.</p>
 						<p>Наших ресурсов и экспертизы достаточно, чтобы полностью закрыть все работы по SEO: наши оптимизаторы и веб-мастеры работают над проектом в связке.</p>
 					</div>
 					<div class="advantages">
@@ -382,14 +382,14 @@
 							</div>
 							<div class="advantages-block bg-gradient-top">
 								<div class="advantages-block__title big">2</div>
-								<div class="advantages-block__extra-title">Ценим ваше время и деньги</div>
+								<div class="advantages-block__extra-title">Ценим ваше время <br>и деньги</div>
 								<div class="advantages-block__description">
 									Налаженное взаимодействие между SEO и техотделом позволяет сделать работу качественнее, быстрее и без переделок. Сразу закладываем в цену работу оптимизаторов и программистов, а также техподдержку.
 								</div>
 							</div>
 							<div class="advantages-block bg-gradient long">
 								<div class="advantages-block__title big">3</div>
-								<div class="advantages-block__extra-title">Предлагаем комплексный подход  </div>
+								<div class="advantages-block__extra-title">Предлагаем <br>комплексный подход</div>
 								<div class="advantages-block__description">
 									Делаем все задачи: продумаем дизайн сайта, доработаем его функционал, наполним его контентом и обеспечим качественную техподдержку в любое время суток и в выходные. В приоритете — долгосрочное сотрудничество.     
 								</div>
@@ -402,7 +402,7 @@
 				<div class="section__body">
 					<div class="section__title">
 						Регулярная SEO-оптимизация.<br>
-						Чем больше команда работает над проектом, тем быстрее и масштабнее результаты
+						<span class="hidden-mobile">Чем больше команда работает над проектом, тем быстрее и масштабнее результаты</span>
 					</div>
 					<div class="advantages">
 						<div class="section__body">
@@ -560,7 +560,7 @@
 						</div>
 					</div>
 					<div class="advantages-block bg-gradient long">
-						<div class="advantages-block__title">Работаем с рисками и решаем проблемы</div>
+						<div class="advantages-block__title">Работаем с рисками <br>и решаем проблемы</div>
 						<div class="advantages-block__extra-title">
 							<p>Мы предупредим о возможных проблемах. А если риск проявился, не молчим о сложностях и не затягиваем решение. Выносим проблемы на обсуждение и предлагаем, как выйти из положения, чтобы проект не пострадал.</p>
 							<p>Не придется беспокоиться о SEO и ставить задачи: мы сами инициируем нужные работы, контролируем качество и сроки.</p>
@@ -573,7 +573,7 @@
 						</div>
 					</div>
 					<div class="advantages-block long">
-						<div class="advantages-block__title medium">Формируем <br><a href="#">подробные отчеты</a></div>
+						<div class="advantages-block__title medium">Формируем <br><a href="#">подробные <br>отчеты</a></div>
 						<div class="advantages-block__extra-title">
 							Они включают список выполненных работ и выгрузку по часам, чтобы понимать, сколько времени специалисты тратят на задачи. Чтобы прозрачно показать процессы, можем совместить работу в системах постановки задач.
 						</div>
@@ -730,9 +730,13 @@
 							<div class="form-field fields__item full">
 								<textarea placeholder="О задаче" name="usercomment"></textarea>
 							</div>
+							<div class="form-field fields__item full">
+								<input type="checkbox" id="usercheckbox">
+								<label for="usercheckbox">Я принимаю условия пользовательского соглашения и даю согласие на обработку персональных данных</label>
+							</div>
 							<div class="form-field full form-bottom">
 								<div class="error">
-									Поле не может быть пустым
+									<span class="error-text">Поле не может быть пустым</span>
 								</div>
 								<button class="btn">Оставить заявку</button>
 							</div>
@@ -746,7 +750,7 @@
 									Адрес:
 								</div>
 								<div class="contacts__block-value">
-									Санкт-Петербург,<br>17-линия В.О. 4-6,<br>БЦ «Ситилинк»<br>офис 411-4
+									Санкт-Петербург, <br>17-линия В.О. 4-6, <br>БЦ «Ситилинк» <br>офис 411-4
 								</div>
 							</div>
 							<div class="contacts__block">
