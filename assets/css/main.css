@@ -2552,6 +2552,10 @@ textarea.error {
 	margin-bottom: 80px;
 }
 
+.results .results__diagram img {
+    margin-top: -355px;
+}
+
 .results .results__diagram .results__list {
 	flex-direction: column;
 	gap: 85px;
@@ -2612,9 +2616,17 @@ textarea.error {
 		margin-top: 25px;
 		margin-bottom: 30px;
 	}
+	
+	.results .results__diagram img {
+		margin-top: -195px;
+	}
 }
 
 @media(max-width: 767px) {
+	.results .results__diagram img {
+		margin-top: 0;
+	}
+	
 	.results .results__item .number {
 		font-size: 40px;
 		line-height: 50px;
