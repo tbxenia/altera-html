@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const modalId = this.getAttribute('data-modal'),
                 modalElem = document.querySelector('.popup[data-modal="' + modalId + '"]');
-
-	console.log('open');
             modalElem.classList.add('active');
             overlay.classList.add('modal-active');
             body.classList.add('modal-fixed');
@@ -25,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         item.addEventListener('click', function (e) {
             const parentModal = this.closest('.popup');
-
-console.log('close');
 
             parentModal.classList.remove('active');
             overlay.classList.remove('modal-active');
@@ -53,6 +49,7 @@ console.log('close');
 
     overlay.addEventListener('click', function () {
         document.querySelector('.popup.active').classList.remove('active');
-        this.classList.remove('active');
+        this.classList.remove('modal-active');
+		body.classList.remove('modal-fixed');
     });
 });

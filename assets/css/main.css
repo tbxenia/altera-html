@@ -566,18 +566,17 @@ textarea.error {
 	top: 0;
 	width: 100%;
 	padding: 20px var(--container-padding-x);
-	border-bottom: var(--border-width-s) solid transparent;
 	animation-name: scrolling-header;
 	animation-fill-mode: both;
 	animation-timeline: scroll();
 	animation-range: 0 6.25rem;
+	background: var(--color-white);
 }
 
 @keyframes scrolling-header {
 	to {
 		padding-block: .625rem;
 		background-color: var(--color-white);
-		border-color: var(--grey-dark)
 	}
 }
 
@@ -1106,7 +1105,8 @@ textarea.error {
 	background: var(--color-white);
 	margin-bottom: .9375rem;
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .reviews-block__image .btn {

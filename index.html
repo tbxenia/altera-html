@@ -13,30 +13,32 @@
 		<link rel="stylesheet" href="./assets/css/main.css">
 	</head>
 	<body>
-		<header class="header container">
-			<div class="header__inner">
-				<div class="header__nav">
-					<a href="/" class="header__nav-logo"><img src="./assets/images/logo-header.svg" alt="Altera Logo" width="47" height="46"></a>
-					<nav>
-						<ul>
-							<li><a href="#services">Услуги</a></li>
-							<li><a href="#cases">Кейсы</a></li>
-							<li><a href="#reviews">Отзывы</a></li>
-							<li><a href="#tariffs">Тарифы</a></li>
-							<li><a href="#work">Как работаем</a></li>
-							<li><a href="#team">Команда</a></li>
-							<li><a href="#">Статьи</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header__socials socials">
-					<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
-					<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
-					<a href="#form" class="btn">Обсудить проект</a>
-				</div>
-				<div class="header_burger" id="burger">
-					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-					<label class="burger" for="burger-checkbox"></label>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__nav">
+						<a href="/" class="header__nav-logo"><img src="./assets/images/logo-header.svg" alt="Altera Logo" width="47" height="46"></a>
+						<nav>
+							<ul>
+								<li><a href="#services">Услуги</a></li>
+								<li><a href="#cases">Кейсы</a></li>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#tariffs">Тарифы</a></li>
+								<li><a href="#work">Как работаем</a></li>
+								<li><a href="#team">Команда</a></li>
+								<li><a href="#">Статьи</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__socials socials">
+						<a href="https://t.me/alteraagency" class="socials__icon"><img src="./assets/images/social-tg.svg" alt="tg"></a>
+						<a href="#" class="socials__icon"><img src="./assets/images/social-whatsapp.svg" alt="whatsapp"></a>
+						<a href="#form" class="btn">Обсудить проект</a>
+					</div>
+					<div class="header_burger" id="burger">
+						<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+						<label class="burger" for="burger-checkbox"></label>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -269,7 +271,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-1.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
@@ -279,7 +281,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-2.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
@@ -289,7 +291,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-3.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Сайт получился функциональным. Он быстро загружается, имеет приятный дизайн»</div>
@@ -299,7 +301,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-1.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Проект был реализован за 7 месяцев. Сайт полностью разработан на основе нашего ТЗ»</div>
@@ -309,7 +311,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-2.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
@@ -319,7 +321,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-3.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
@@ -329,7 +331,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-1.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-1.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Проект был реализован за 7 месяцев. Сайт полностью разработан на основе нашего ТЗ»</div>
@@ -339,7 +341,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-2.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-2.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Менеджеры всегда были готовы ответить на вопросы и предупредить о возможных нюансах»</div>
@@ -349,7 +351,7 @@
 									<div class="slider__item swiper-slide">
 										<div class="reviews-block">
 											<div class="reviews-block__image">
-												<img src="./assets/images/ReviewsBlock-3.jpg" alt="">
+												<img data-modal="reviews" class="js-open-modal" src="./assets/images/ReviewsBlock-3.jpg" alt="">
 												<div data-modal="reviews" class="btn js-open-modal">Читать отзыв</div>
 											</div>
 											<div class="reviews-block__title">«Работа над сайтом всегда проходит эффективно и без сбоев»</div>
@@ -365,7 +367,7 @@
 			<section class="section container recommend">
 				<div class="section__body">
 					<div class="section__title">
-						Даем только рекомендации, которые реально внедрить с учетом бюджета и ограничений на стороне клиента 
+						Даем рекомендации, которые реально внедрить с учетом бюджета и ограничений на стороне клиента 
 					</div>
 					<div class="section__extra">
 						<p>Одна из основных причин, почему не получается добиться результатов в продвижении — нет возможности внедрить рекомендации SEO&#8209;специалистов.</p>
@@ -401,7 +403,7 @@
 			<section class="section container tariffs" id="tariffs">
 				<div class="section__body">
 					<div class="section__title">
-						Регулярная SEO-оптимизация.<br>
+						Регулярная SEO-оптимизация<br>
 						<span class="hidden-mobile">Чем больше команда работает над проектом, тем быстрее и масштабнее результаты</span>
 					</div>
 					<div class="advantages">
@@ -709,7 +711,7 @@
 				<div class="section__body">
 					<div class="contacts__form multicolor__block">
 						<div class="section__title">
-							Обсудим задачу
+							Обсудим проект
 						</div>
 						<div class="section__extra">
 							Мы свяжемся с вами в течение двух часов, чтобы задать вопросы и обсудить, какую пользу можем принести
