@@ -566,18 +566,7 @@ textarea.error {
 	top: 0;
 	width: 100%;
 	padding: 20px var(--container-padding-x);
-	animation-name: scrolling-header;
-	animation-fill-mode: both;
-	animation-timeline: scroll();
-	animation-range: 0 6.25rem;
 	background: var(--color-white);
-}
-
-@keyframes scrolling-header {
-	to {
-		padding-block: .625rem;
-		background-color: var(--color-white);
-	}
 }
 
 .header__inner {
