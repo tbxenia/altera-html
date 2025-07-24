@@ -1,0 +1,144 @@
+.team {
+	padding-bottom: 15px;
+}
+
+.team .section__body {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.team__info .team__info-title {
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 46px;
+}
+
+.team__info ul {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: auto;
+}
+
+.team__info {
+	max-width: 333px;
+	width: 100%;
+	padding-bottom: 20px;
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+}
+
+.team__cards {
+	max-width: calc(100% - 333px - 15px);
+	width: 100%;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 20px;
+}
+
+.team__cards .swiper {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.team__cards .team__item {
+	width: calc(1/4*100% - (1 - 1/4)*15px);
+}
+
+.team__cards .team__item img {
+	border-radius: 12px;
+	margin-bottom: 12px;
+	display: block;
+	max-width: 100%;
+}
+
+.team__cards .team__item-name {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.team__cards .team__item-post {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.team+.contacts {
+	padding-top: 0;
+}
+
+@media(max-width: 1024px) {
+	.team__info {
+		max-width: 294px;
+	}
+
+	.team__cards {
+		max-width: calc(100% - 294px - 15px);
+	}
+	
+	.team__info .team__info-title {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 46px;
+	}
+	
+	.team__info ul {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+@media(max-width: 576px) {
+	.team .section__body,
+	.contacts .section__body {
+		flex-direction: column;
+	}
+	
+	.team .team__item {
+		width: 200px;
+	}
+	
+	.team__info,
+	.team__cards,
+	.contacts__form,
+	.contacts__info	{
+        max-width: 100%;
+	}
+	
+	.team__cards .team__item-name,
+	.team__cards .team__item-post {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.fields .form-field:nth-child(odd),
+	.fields .form-field:nth-child(even) {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.fields .form-field.full {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.fields .form-field .btn {
+		width: 100%;
+	}
+	
+	.contacts__block .contacts__block-title {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.contacts__info .contacts__block .contacts__block-value {
+		font-size: 24px;
+		line-height: 28px;
+	}
+}

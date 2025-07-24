@@ -1,0 +1,161 @@
+.usability {
+    margin-left: 0;
+    margin-right: calc(700px - 50vw);
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.usability__list {
+
+}
+
+.usability__block {
+	width: 450px;
+	border-radius: 20px;
+	font-weight: 300;
+	padding: 20px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center center;
+	background-color: var(--second-blue);
+}
+
+.usability__block:before {
+	-webkit-transition: all .3s;
+    transition: all .3s;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	display: block;
+	border-radius: var(--border-radius-m);
+}
+
+.usability__block:hover:before {
+	background: rgba(0, 0, 0, .05);
+}
+
+.advantages-block>div:last-child {
+	margin-top: auto;
+}
+
+.usability__block.small {
+	width: 333px;
+}
+
+.usability__block.white-text {
+	color: var(--color-white);
+}
+
+.usability__block-title {
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 300;
+}
+
+.usability__block-description {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.usability__block-text {
+	margin-top: auto;
+}
+
+.advantages-block ul,
+.usability__block-text ul {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.advantages-block ul li,
+.usability__block-text ul li {
+	padding: 6px 10px;
+	border-radius: 16px;
+	background-color: var(--color-white);
+	font-size: 18px;
+	line-height: 22px;
+	width: fit-content;
+	color: var(--color-black);
+}
+
+.advantages-block .number,
+.usability__block-text .number {
+	font-weight: 100;
+	font-size: 110px;
+	line-height: 80px;
+	letter-spacing: -0.1em;
+}
+
+.advantages-block .text,
+.usability__block-text .text {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@media(max-width: 1440px) {
+	.usability {
+		margin-right: 0;
+	}
+	
+	.usability .advantages-block {
+		width: 333px;
+	}
+}
+
+@media(max-width: 576px) {
+	.usability {
+		flex-direction: column;
+		margin-right: 0;
+	}
+	
+	.usability__block,
+	.usability__block.small {
+		width: 100%;
+		height: 400px;
+	}
+	
+	.usability__list {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	
+	.advantages-block .number,
+	.usability__block-text .number {
+		font-weight: 100;
+		font-size: 100px;
+		line-height: 100px;
+	}
+	
+	.advantages-block ul li,
+	.usability__block-text ul li {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.usability .advantages-block {
+        width: 100%;
+    }
+	
+	.usability .usability__block-title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.usability .usability__block-description {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.usability__block {
+		gap: 8px;
+	}
+}

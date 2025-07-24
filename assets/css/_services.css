@@ -1,0 +1,38 @@
+.services {
+	position: relative;
+	margin-right: -20px;
+}
+
+.services__item {
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-m);
+	padding: 20px;
+	letter-spacing: -0.02em;
+	height: 443px;
+	max-width: 333px;
+	width: 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.services__item:nth-child(even) {
+	max-width: 449px;
+}
+
+.services__item-title {
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 15px;
+}
+
+.services__item-text {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.services__nav {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+}

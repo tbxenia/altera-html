@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		slidesPerGroup: 1,
 		loop: true,
 		speed: 1200,
+		navigation: {
+			nextEl: '.usability__nav .slider__next',
+			prevEl: '.usability__nav .slider__prev',
+		},
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -38,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
-	const teamSlider = new Swiper(".team__cards", {
+	const teamSlider = new Swiper(".team__cards-inner", {
 		slidesPerView: 'auto',
 		slidesPerGroup: 1,
 		loop: true,
@@ -53,6 +57,32 @@ document.addEventListener("DOMContentLoaded", () => {
 			   enabled: false,
 		   }
 		}
+	});
+	
+	const services = new Swiper(".services", {
+		slidesPerView: 'auto',
+		slidesPerGroup: 1,
+		loop: false,
+		speed: 1200,
+		autoplay: false,
+		spaceBetween: 15,
+		navigation: {
+			nextEl: '.services__nav .slider__next',
+			prevEl: '.services__nav .slider__prev',
+		},
+	});
+	
+	const teamSliderHome = new Swiper(".team__cards-home", {
+		slidesPerView: 'auto',
+		slidesPerGroup: 1,
+		loop: true,
+		speed: 1200,
+		autoplay: false,
+		spaceBetween: 15,
+		navigation: {
+			nextEl: '.team__nav .slider__next',
+			prevEl: '.team__nav .slider__prev',
+		},
 	});
 	
 	Fancybox.bind("[data-fancybox]", {

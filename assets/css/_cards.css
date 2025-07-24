@@ -1,0 +1,31 @@
+.cards {
+	
+}
+
+.cards a {
+	color: var(--accent-red);
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-offset: 0%;
+	text-decoration-thickness: 1px;
+	text-decoration-skip-ink: auto;
+	transition: 0.3s all;
+}
+
+.cards a:hover {
+	text-decoration: none;
+}
+
+@media(max-width: 576px) {
+	.cards .section__body .advantages-block {
+		min-height: 360px;
+	}
+	
+	.cards .section__body .advantages-block__title br {
+		display: none;
+	}
+	
+	.cards .section__body .advantages-block.bg-gradient-half:after {
+		display: none;
+	}
+}
