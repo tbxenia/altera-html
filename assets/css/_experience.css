@@ -132,3 +132,18 @@
 	align-items: center;
 	white-space: nowrap;
 }
+
+@media(max-width: 991px) {
+	.experience__item,
+	.experience__item.extralong  {
+		width: calc(1/2*100% - (1 - 1/2)*15px);
+	}
+	
+	.experience__item-title {
+		flex-direction: column;
+	}
+	
+	.experience__item-description.flex {
+		flex-direction: column;
+	}
+}

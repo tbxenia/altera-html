@@ -158,4 +158,8 @@
 	.usability__block {
 		gap: 8px;
 	}
+	
+	.usability__nav {
+		display: none !important;
+	}
 }

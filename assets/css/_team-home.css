@@ -55,5 +55,17 @@
 }
 
 .team-home .team__cards .team__item {
-	max-width: 230px;
+	width: 230px;
+}
+
+@media(max-width: 991px) {
+	.team-home__item {
+		width: calc(1/2*100% - (1 - 1/2)*15px);
+	}
+}
+
+@media(max-width: 576px) {
+	.team-home__item {
+		width: 100%;
+	}
 }

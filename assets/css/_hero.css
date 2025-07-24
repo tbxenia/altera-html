@@ -85,3 +85,40 @@
     width: 100%;
     justify-content: center;
 }
+
+@media(max-width: 991px) {
+	.hero {
+		flex-direction: column;
+	}
+	
+	.hero__header,
+	.hero__promo {
+		width: 100%;
+	}
+	
+	.hero__promo-title {
+		text-align: center;
+	}
+}
+
+@media(max-width: 576px) {
+	.hero__header,
+	.hero__promo {
+		min-height: 400px;
+	}
+	
+	.hero__promo-elem {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.hero__header .hero_title {
+		font-size: 32px;
+		line-height: 36px;
+	}
+	
+	.hero__header .hero_subtitle {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
