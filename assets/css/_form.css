@@ -142,3 +142,39 @@
 .fields input:focus {
 	outline: none;
 }
+
+@media(max-width: 576px) {
+	.fields .form-field:nth-child(odd),
+	.fields .form-field:nth-child(even) {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.fields .form-field.full {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.fields .form-field .btn {
+		width: 100%;
+	}
+	
+	.contacts__block .contacts__block-title {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.contacts__info .contacts__block .contacts__block-value {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.contacts .section__body {
+		flex-direction: column;
+	}
+	
+	.contacts__form,
+	.contacts__info	{
+        max-width: 100%;
+	}
+}

@@ -73,7 +73,7 @@
 	padding-top: 0;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1199px) {
 	.team__info {
 		max-width: 294px;
 	}
@@ -95,8 +95,7 @@
 }
 
 @media(max-width: 576px) {
-	.team .section__body,
-	.contacts .section__body {
+	.team .section__body {
 		flex-direction: column;
 	}
 	
@@ -105,9 +104,7 @@
 	}
 	
 	.team__info,
-	.team__cards,
-	.contacts__form,
-	.contacts__info	{
+	.team__cards	{
         max-width: 100%;
 	}
 	
@@ -115,30 +112,5 @@
 	.team__cards .team__item-post {
 		font-size: 16px;
 		line-height: 20px;
-	}
-	
-	.fields .form-field:nth-child(odd),
-	.fields .form-field:nth-child(even) {
-		width: 100%;
-		max-width: 100%;
-	}
-	
-	.fields .form-field.full {
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.fields .form-field .btn {
-		width: 100%;
-	}
-	
-	.contacts__block .contacts__block-title {
-		font-size: 16px;
-		line-height: 20px;
-	}
-	
-	.contacts__info .contacts__block .contacts__block-value {
-		font-size: 24px;
-		line-height: 28px;
 	}
 }

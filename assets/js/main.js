@@ -70,6 +70,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			nextEl: '.services__nav .slider__next',
 			prevEl: '.services__nav .slider__prev',
 		},
+		breakpoints: {
+		   0: {
+			   enabled: false
+		   },
+		   576: {
+			   enabled: true,
+		   }
+		}
 	});
 	
 	const teamSliderHome = new Swiper(".team__cards-home", {

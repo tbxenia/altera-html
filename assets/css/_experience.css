@@ -133,17 +133,61 @@
 	white-space: nowrap;
 }
 
+@media(max-width: 1199px) {
+	.experience__item,
+	.experience__item.long {
+		width: calc(1/3*100% - (1 - 1/3)*15px);
+	}
+	
+	.experience__item-title {
+		flex-direction: column;
+		font-size: 24px;
+		line-height: 28px;
+		gap: 10px;
+	}
+	
+	.experience__item-title .icons img {
+		max-width: 63px;
+	}
+	
+	.experience__item-description.flex {
+		flex-direction: column;
+	}
+	
+	.experience__item-description.flex {
+		gap: 8px;
+	}
+	
+	.experience__item.extralong {
+		width: calc(2/3*100% - (1 - 2/3)*15px);
+	}
+}
+
 @media(max-width: 991px) {
 	.experience__item,
 	.experience__item.extralong  {
 		width: calc(1/2*100% - (1 - 1/2)*15px);
 	}
 	
-	.experience__item-title {
-		flex-direction: column;
+	.experience__item-subtitle {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.experience__item-description {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+@media(max-width: 576px) {
+	.experience__item,
+	.experience__item.extralong,
+	.experience__item.long  {
+		width: 100%;
 	}
 	
-	.experience__item-description.flex {
-		flex-direction: column;
+	.experience__item-description .link {
+		font-size: 24px;
+		line-height: 28px;
 	}
 }
