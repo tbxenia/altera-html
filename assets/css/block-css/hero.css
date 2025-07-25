@@ -31,7 +31,7 @@
 
 .hero__promo {
 	width: calc(1/2*100% - (1 - 1/2)*15px);
-	background: url('../images/hero__bg.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
+	background: url('../../images/hero__bg.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
 	background-repeat: no-repeat !important;
 	padding: 40px;
 	border-radius: var(--border-radius-m);
@@ -116,13 +116,13 @@
 	}
 	
 	.hero__promo {
-		background: url('../images/hero__bg-1440.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
+		background: url('../../images/hero__bg-1440.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
 	}
 }
 
 @media(max-width: 767px) {	
 	.hero__promo {
-		background: url('../images/hero__bg-767.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
+		background: url('../../images/hero__bg-767.png'), linear-gradient(180deg, #ED1A3B 0%, #FF526D 100%);
 	}
 }
 
