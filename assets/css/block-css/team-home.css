@@ -2,6 +2,10 @@
 	
 }
 
+.team-home .multicolor__block {
+	border-radius: 0;
+}
+
 .team-home__list {
 	display: flex;
 	gap: 15px;

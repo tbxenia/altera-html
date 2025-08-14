@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		slidesPerGroup: 1,
 		loop: true,
 		speed: 1200,
-		navigation: {
+		/* navigation: {
 			nextEl: '.usability__nav .slider__next',
 			prevEl: '.usability__nav .slider__prev',
-		},
+		}, */
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -66,10 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		speed: 1200,
 		autoplay: false,
 		spaceBetween: 15,
-		navigation: {
+		/* navigation: {
 			nextEl: '.services__nav .slider__next',
 			prevEl: '.services__nav .slider__prev',
-		},
+		}, */
 		breakpoints: {
 		   0: {
 			   enabled: false
@@ -87,10 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		speed: 1200,
 		autoplay: false,
 		spaceBetween: 15,
-		navigation: {
+		/* navigation: {
 			nextEl: '.team__nav .slider__next',
 			prevEl: '.team__nav .slider__prev',
-		},
+		}, */
 	});
 	
 	Fancybox.bind("[data-fancybox]", {

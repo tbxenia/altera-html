@@ -70,29 +70,6 @@
 	margin-bottom: 8px;
 }
 
-.experience__item-description .author {
-	display: flex;
-	gap: 10px;
-	font-size: 16px;
-	line-height: 20px;
-	align-items: center;
-}
-
-.experience__item-description .author .author__name {
-	margin-bottom: 8px;
-}
-
-.experience__item-description .author .author__post {
-	font-weight: 500;
-}
-
-.experience__item-description .author img {
-	max-width: 70px;
-	height: auto;
-	border: 1px solid var(--grey-dark);
-	border-radius: 50%;
-}
-
 .experience__item-description.flex {
 	display: flex;
 	justify-content: space-between;
@@ -184,6 +161,7 @@
 	.experience__item.extralong,
 	.experience__item.long  {
 		width: 100%;
+		min-height: 260px;
 	}
 	
 	.experience__item-description .link {

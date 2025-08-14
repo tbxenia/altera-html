@@ -633,6 +633,10 @@ textarea.error {
 	padding-bottom: 0;
 }
 
+.section.section-nopadding-top {
+	padding-top: 0;
+}
+
 .section__header {
 	padding-bottom: fluid-to-taptop(50, 30);
 	display: flex;
@@ -851,6 +855,11 @@ textarea.error {
 .link a {
 	color: var(--accent-red);
 	text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    text-decoration-skip-ink: auto;
+    transition: 0.3s all;
 }
 
 .link a:hover {
@@ -878,6 +887,10 @@ textarea.error {
 
 .bg-gray {
 	background-color: var(--gray-hover) !important;
+}
+
+.bg-light-gray {
+	background-color: var(--gray-silver) !important;
 }
 
 .bg-violet {
@@ -1293,4 +1306,27 @@ textarea.error {
 .slider__prev:hover,
 .slider__next:hover {
 	opacity: .7;
+}
+
+.author {
+	display: flex;
+	gap: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	align-items: center;
+}
+
+.author .author__name {
+	margin-bottom: 8px;
+}
+
+.author .author__post {
+	font-weight: 500;
+}
+
+.author img {
+	max-width: 70px;
+	height: auto;
+	border: 1px solid var(--grey-dark);
+	border-radius: 50%;
 }
