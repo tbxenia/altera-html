@@ -33,6 +33,7 @@
 }
 
 @media(max-width: 767px) {
+	.blog__list.experience__list .experience__item,
 	.blog__list.experience__list .experience__item.long {
 		width: 100%;
 	}
