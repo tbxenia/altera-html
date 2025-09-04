@@ -1,0 +1,33 @@
+.pagination {
+	padding: 40px 0 0;
+}
+
+.pagination ul {
+	display: flex;
+	gap: 6px;
+	justify-content: center;
+}
+
+.pagination ul li,
+.pagination ul li a {
+	display: flex;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	justify-content: center;
+	background: var(--gray-silver);
+	border-radius: 50%;
+}
+
+.pagination ul li.active {
+	background: var(--color-black);
+	color: var(--color-white);
+}
+
+.pagination ul li.disabled svg path {
+	stroke: var(--grey-dark);
+}
+
+.pagination ul li:hover a svg path {
+	stroke: var(--accent-red);
+}

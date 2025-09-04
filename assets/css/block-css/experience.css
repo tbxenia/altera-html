@@ -101,6 +101,7 @@
 	line-height: 22px;
 	border-radius: 16px;
 	max-width: fit-content;
+	color: var(--color-black);
 }
 
 .experience__item-description .time {
@@ -108,6 +109,11 @@
 	gap: 3.5px;
 	align-items: center;
 	white-space: nowrap;
+}
+
+.experience__item.bg-violet-simple .experience__item-description .time svg path,
+.experience__item.bg-gradient .experience__item-description .time svg path {
+	fill: var(--color-white);
 }
 
 @media(max-width: 1199px) {
