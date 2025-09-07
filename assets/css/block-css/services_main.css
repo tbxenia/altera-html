@@ -120,4 +120,8 @@
 	.services-main__item.item__long {
 		height: 400px;
 	}
+	
+	.services-main .section__extra {
+		max-width: 100%;
+	}
 }
