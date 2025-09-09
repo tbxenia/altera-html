@@ -1,0 +1,39 @@
+.contacts__map {
+	width: 100%;
+	max-width: 913px;
+}
+
+.contacts__map .section__title {
+	margin-bottom: 40px;
+}
+
+.contacts__map .section__extra {
+    margin-bottom: 36px;
+}
+
+@media(max-width: 576px) {
+	.contacts__map	{
+        max-width: 100%;
+	}
+}
+
+.contacts__info.company__details .contacts__block .contacts__block-value {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.contacts__info.company__details .contacts__block .contacts__block-title {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.map iframe {
+	border-radius: 15px;
+}
+
+.contacts__page {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
