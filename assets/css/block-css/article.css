@@ -1,0 +1,130 @@
+.article {
+
+}
+
+.article .section__body {
+    display: flex;
+    gap: 15px;
+}
+
+.articles__left {
+    width: 100%;
+    max-width: 913px;
+    background: var(--gray-silver);
+    border-radius: 40px;
+    padding: 40px 160px;
+}
+
+.article h1.section__title {
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.article__info {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article__info-item {
+    padding: 8px 12px;
+    border-radius: 16px;
+    display: flex;
+    gap: 3.5px;
+    align-items: center;
+    white-space: nowrap;
+    background: var(--color-white);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article__info-later .btn {
+    padding: 7px 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article__img {
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.article__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article__body p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding-bottom: 20px;
+}
+
+.article__body h2 {
+    padding: 30px 0;
+}
+
+.article__body ul,
+.article__body ol {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    gap: 10px;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+.article__body ol {
+    counter-reset: section;
+}
+
+.article__body ul li,
+.article__body ol li {
+    position: relative;
+}
+
+.article__body ol li {
+    counter-increment: section;
+}
+
+.article__body ul li:before {
+    width: 6px;
+    height: 6px;
+    background: var(--color-black);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.article__body ol li:before {
+    content: counters(section, ".") " ";
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.article__body .article__img p {
+    margin: 0;
+    padding: 0;
+}

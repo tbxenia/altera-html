@@ -881,6 +881,10 @@ textarea.error {
 	overflow: hidden
 }
 
+.bg-white{
+	background-color: var(--color-white) !important;
+}
+
 .bg-blue {
 	background-color: var(--second-blue) !important;
 }
@@ -897,6 +901,13 @@ textarea.error {
 	background-image: url('../images/bg_tariffs.png') !important;
 	background-size: cover;
 	background-position: center center;
+}
+
+.bg-violet-plus {
+	background-image: url('../images/usability-3.jpg') !important;
+	background-size: cover;
+	background-position: center center;
+	color: var(--color-white);
 }
 
 .bg-violet-simple {
@@ -930,13 +941,13 @@ textarea.error {
 	position: relative;
 }
 
-.advantages-block.bg-gradient-half {
+.bg-gradient-half {
 	position: relative;
 	overflow: hidden;
 	z-index: 0
 }
 
-.advantages-block.bg-gradient-half:after {
+.bg-gradient-half:after {
 	position: absolute;
 	top: 0;
 	right: 0;
