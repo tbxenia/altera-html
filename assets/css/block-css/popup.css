@@ -104,3 +104,24 @@
 		max-width: 100%;
 	}
 }
+
+.popup__title {
+	font-size: 32px;
+	line-height: 38px;
+	margin-bottom: 30px;
+}
+
+.popup input {
+	background: var(--gray-hover);
+    border: 2px solid var(--gray-hover);
+}
+
+.popup input:active,
+.popup input:focus {
+	background: var(--grey-dark);
+    border: 2px solid var(--grey-dark);
+}
+
+.popup input[type="checkbox"] + label::before {
+    border: 1px solid var(--gray-hover);
+}
