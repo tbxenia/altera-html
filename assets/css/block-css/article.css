@@ -74,6 +74,10 @@
     height: auto;
 }
 
+.article__left {
+	position: relative;
+}
+
 .article__body p {
     font-weight: 300;
     font-size: 18px;
@@ -201,6 +205,7 @@
 	line-height: 20px;
 	margin-top: 0;
     margin-left: -5px;
+	padding-bottom: 0;
 }	
 
 .articles__headtitle a {
