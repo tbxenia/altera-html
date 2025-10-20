@@ -13,6 +13,14 @@ document.addEventListener("scroll", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+	document.querySelectorAll('.faq__item').forEach(faq => {
+		faq.addEventListener('click', () => {
+			console.log('test click');
+			faq.classList.toggle('active');
+			faq.querySelector('.faq__item-answer').classList.toggle('active');
+		});
+	});
+	
 	
 	positionLabel('.label-p');
 	
@@ -21,6 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	const advantagesSlider = new Swiper(".slider__advantages", {
 		slidesPerView: 'auto',
 		slidesPerGroup: 1,
+		loop: true,
+		autoplay: {
+			delay: 2000,
+		},
+	});
+	
+	const clientsSlider = new Swiper(".slider__clients", {
+		slidesPerView: 'auto',
+		grid: {
+		  fill: 'row',
+		  rows: 2
+		},
+		slidesPerGroup: 2,
 		loop: true,
 		autoplay: {
 			delay: 2000,

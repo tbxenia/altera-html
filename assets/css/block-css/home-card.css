@@ -16,6 +16,7 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 400px;
+	gap: 8px;
 }
 
 .home-cards__item.height-auto {
@@ -51,6 +52,20 @@
 	line-height: 60px;
 	display: flex;
 	gap: 45px;
+}
+
+.home-cards__item .home-cards__item-title a {
+	text-decoration: underline;
+}
+
+.home-cards__item .home-cards__item-title.column {
+	flex-direction: column;
+	gap: 0;
+}
+
+.home-cards__item-title.big {
+	font-size: 110px;
+	line-height: 80px;
 }
 
 .home-cards__item .home-cards__item-title.medium {

@@ -125,3 +125,7 @@
 		max-width: 100%;
 	}
 }
+
+.services-main__item.full {
+	width: 100%;
+}

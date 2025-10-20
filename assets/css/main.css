@@ -347,6 +347,15 @@ body.modal-fixed {
 .section__title.center,
 .section__extra-title.center {
 	text-align: center;
+	justify-content: center;
+}
+
+.color-white {
+	color: var(--color-white) !important;
+}
+
+.color-white ul li:before {
+	background: var(--color-white) !important;
 }
 
 .section__extra-title {
@@ -787,6 +796,7 @@ textarea.error {
 	position: relative;
 	-webkit-transition: all .3s;
     transition: all .3s;
+	min-width: 333px;
 }
 
 .advantages-block:before {
