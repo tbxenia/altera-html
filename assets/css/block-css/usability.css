@@ -104,9 +104,11 @@
 	.usability {
 		margin-right: 0;
 	}
-	
+}
+
+@media(min-width: 576px) and (max-width: 1440px) {
 	.usability .advantages-block {
-		width: 333px;
+		min-width: 333px;
 	}
 }
 

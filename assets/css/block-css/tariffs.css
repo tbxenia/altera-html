@@ -72,6 +72,8 @@
 .tariffs__block .tariffs__block-title {
 	font-size: 80px;
 	line-height: 60px;
+	letter-spacing: -0.1em;
+	font-weight: 100;
 }
 
 .tariffs__block .tariffs__block-text ul {

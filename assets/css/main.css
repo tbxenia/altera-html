@@ -788,15 +788,20 @@ textarea.error {
 .advantages-block {
 	display: flex;
 	flex-direction: column;
-	gap: 1.875rem;
-	width: calc(25% - .625rem);
+	gap: 15px;
+	width: calc(1/4*100% - (1 - 1/4)*15px);
 	border-radius: var(--border-radius-m);
 	background-color: var(--gray-silver);
 	padding: 1.25rem;
 	position: relative;
 	-webkit-transition: all .3s;
     transition: all .3s;
-	min-width: 333px;
+}
+
+@media(min-width: 1441px) {
+	.advantages-block {
+		min-width: 333px;
+	}
 }
 
 .advantages-block:before {
@@ -830,11 +835,11 @@ textarea.error {
 }
 
 .advantages-block.long {
-	width: calc(50% - .625rem)
+	width: calc(1/2*100% - (1 - 1/2)*15px);
 }
 
 .advantages-block.extralong {
-	width: calc(75% - .625rem)
+	width: calc(2/3*100% - (1 - 2/3)*15px);
 }
 
 .advantages-block.third {
@@ -854,6 +859,12 @@ textarea.error {
 
 .advantages-block.full .slider {
 	margin-inline: -1.25rem
+}
+
+@media(max-width: 767px) {
+	.advantages-block {
+		min-width: auto;
+	}
 }
 
 .link {
@@ -985,6 +996,11 @@ textarea.error {
     gap: 16px;
 }
 
+.advantages-block__description img {
+	max-width: 100%;
+	height: auto;
+}
+
 .advantages-block__description-column {
 	display: flex;
 	gap: 1.875rem;
@@ -1030,7 +1046,8 @@ textarea.error {
 .advantages-block__title {
 	font-size: 28px;
 	line-height: 32px;
-	z-index: 2
+	z-index: 2;
+	letter-spacing: -0.1em;
 }
 
 .advantages-block__title.big {
@@ -1130,7 +1147,7 @@ textarea.error {
 
 .advantages .section__body {
 	display: flex;
-	gap: .9375rem;
+	gap: 15px;
 	flex-wrap: wrap
 }
 
