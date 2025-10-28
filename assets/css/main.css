@@ -199,6 +199,10 @@ svg * {
 	display: block;
 }
 
+.padding-none {
+	padding: 0 !important;
+}
+
 body.fixed,
 body.modal-fixed {
 	overflow: hidden;
@@ -914,6 +918,10 @@ textarea.error {
 	background-color: var(--gray-hover) !important;
 }
 
+.bg-red {
+	background-color: var(--accent-red) !important;
+}
+
 .bg-light-gray {
 	background-color: var(--gray-silver) !important;
 }
@@ -1190,6 +1198,10 @@ textarea.error {
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
+}
+
+.reviews-block__image img {
+	max-width: 100%;
 }
 
 .reviews-block__image .btn {
