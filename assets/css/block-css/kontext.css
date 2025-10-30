@@ -1,0 +1,90 @@
+.clients .section__body {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+}
+
+.kontext .services-cases .advantages-block {
+	width: calc(1/3*100% - (1 - 1/3)*15px);
+}
+
+.kontext .services-cases .advantages {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.kontext .value-work__list {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.kontext .services-hero .section__body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.kontext .services-hero .section__body .advantages-block__title {
+	font-size: 54px;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+
+.kontext .services-hero .section__body .advantages-block__description.column {
+	font-size: 24px;
+	line-height: 28px;
+	height: 100%;
+}
+
+.kontext .hero__promo-list {
+    justify-content: flex-start;
+}
+
+.kontext .services-hero .advantages-block {
+	min-height: 600px;
+}
+
+.value-work__item-icon img {
+	max-width: 80px;
+}
+
+@media(max-width: 1199px) {
+	.kontext .services-hero .advantages-block {
+		width: calc(1/2*100% - (1 - 1/2)*15px);
+	}
+}
+
+@media(max-width: 991px) {
+	.kontext .services-hero .advantages-block,
+	.advantages-block, .advantages-block.long {
+		min-height: 350px;
+		width: 100%;
+	}
+	
+	.kontext .services-cases .advantages-block {
+		width: calc(1/2*100% - (1 - 1/2)*15px);
+	}
+	
+	.kontext .services-cases .advantages-block:first-child {
+		width: 100%;
+	}
+	
+	.value-work .value-work__item.full {
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px) {
+	.kontext .services-hero .section__body .advantages-block__title {
+		font-size: 32px;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+	
+	.kontext .services-hero .section__body .advantages-block__description {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}

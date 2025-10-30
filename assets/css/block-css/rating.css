@@ -1,0 +1,108 @@
+.rating .rating__list {
+	display: flex;
+	gap: 15px;
+}
+
+.rating .rating__item {
+	border-radius: var(--border-radius-m);
+	background: var(--gray-silver);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.rating .rating__item:nth-child(1) {
+	width: 100%;
+	max-width: 449px;
+}
+
+.rating .rating__item:nth-child(2) {
+	width: 100%;
+	max-width: 565px;
+}
+
+.rating .rating__item.bg-gradient-half:after {
+	content: url('data:image/svg+xml,<svg width="255" height="292" viewBox="0 0 255 292" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_f_2323_15308)"><ellipse cx="305.128" cy="-13.7255" rx="236.526" ry="167.915" transform="rotate(-45 305.128 -13.7255)" fill="url(%23paint0_linear_2323_15308)"/></g><defs><filter id="filter0_f_2323_15308" x="0" y="-318.852" width="610.254" height="610.253" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2323_15308"/></filter><linearGradient id="paint0_linear_2323_15308" x1="305.128" y1="-181.641" x2="305.128" y2="154.19" gradientUnits="userSpaceOnUse"><stop stop-color="%23DE0085"/><stop offset="1" stop-color="%23F43150"/></linearGradient></defs></svg>');
+}
+
+.rating .rating__item-title {
+	font-weight: 200;
+	font-size: 54px;
+	line-height: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.rating .rating__item-title .big {
+	font-weight: 100;
+	font-size: 110px;
+	line-height: 80px;
+	letter-spacing: -0.1em;
+}
+
+.rating .rating__item-title .small {
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.02em;
+}
+
+.rating .rating__item-content {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	margin-top: auto;
+}
+
+.rating .rating__item-content.flex-img {
+	display: flex;
+	gap: 15px;
+	align-items: flex-end;
+}
+
+.rating .rating__item-content.flex-img img {
+	max-width: 100%;
+}
+
+.rating .rating__item-content:not(.flex-img) p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+@media(max-width: 1024px) {
+	.rating .rating__item:nth-child(1) {
+		width: 486px
+	}
+	
+	.rating .rating__item:nth-child(2)  {
+		width: 318px;
+	}
+}
+
+@media(max-width: 767px) {
+	.rating .rating__item,
+	.rating .rating__item:nth-child(2) {
+		width: calc(1/2*100% - (1 - 1/2)*15px);
+	}
+	
+	.rating .rating__item:nth-child(1) {
+		width: 100%;
+		min-width: auto;
+		max-width: 100%;
+	}
+	
+	.rating__list {
+		flex-wrap: wrap;
+	}
+}
+
+@media(max-width: 576px) {
+	.rating .rating__item,
+	.rating .rating__item:nth-child(1),
+	.rating .rating__item:nth-child(2) {
+		width: 100%;
+		min-width: auto;
+		max-width: 100%;
+	}
+}

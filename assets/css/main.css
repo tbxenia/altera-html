@@ -1055,7 +1055,6 @@ textarea.error {
 	font-size: 28px;
 	line-height: 32px;
 	z-index: 2;
-	letter-spacing: -0.1em;
 }
 
 .advantages-block__title.big {
@@ -1169,6 +1168,12 @@ textarea.error {
 
 .slider__item {
 	max-width: fit-content
+}
+
+@media(max-width: 576px) {
+	.home-cards__list.full .slider__advantages .slider__item {
+		max-width: auto;
+	}
 }
 
 .reviews {
