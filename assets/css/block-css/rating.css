@@ -104,5 +104,11 @@
 		width: 100%;
 		min-width: auto;
 		max-width: 100%;
+		gap: 30px;
+	}
+	
+	.rating .rating__item-title {
+		font-size: 32px;
+		line-height: 36px;
 	}
 }

@@ -906,6 +906,12 @@ textarea.error {
 	overflow: hidden
 }
 
+.bg-gradient-angle {
+	background-image: url('../images/bg-gradient__angle.svg');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
 .bg-white{
 	background-color: var(--color-white) !important;
 }
@@ -1390,4 +1396,93 @@ textarea.error {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+}
+
+.block-row {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.block-col {
+	padding: 20px;
+	border-radius: var(--border-radius-m);
+	background: var(--gray-silver);
+	flex-direction: column;
+}
+
+.block-col.full {
+	width: 100% !important;
+}
+
+.block-label {
+	padding: 6px 10px;
+	display: flex;
+	gap: 8px;
+	border-radius: 16px;
+	width: fit-content;
+	font-size: 24px;
+	line-height: 28px;
+	align-items: center;
+}
+
+.bg-violet-simple,
+.bg-red {
+	color: var(--color-white);
+}
+
+.container ol {
+    counter-reset: num
+}
+
+.container ol>li {
+    position: relative;
+    margin-bottom: 10px;
+	padding-left: 22px;
+}
+
+.container ol>li>ol {
+    margin-left: 30px;
+	margin-top: 10px;
+}
+
+.container ol>li:before {
+    content: counter(num) '.';
+    counter-increment: num;
+    display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container ol>li>ul {
+	margin-left: -17px;
+    margin-top: -1px;
+}
+
+.container ol>li>ul li {
+	position: relative;
+	padding-left: 17px;
+}
+
+.container ol>li>ul li:before {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #000;
+	border-radius: 50%;
+	content: '';
+	top: 10px;
+	left: 0;
+}
+
+@media(max-width: 576px) {
+	.block-label {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.block-col {
+		padding: 20px;
+	}
 }
